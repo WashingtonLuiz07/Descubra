@@ -6,9 +6,9 @@ function mostrarResultado() {
   resultado.classList.remove("hidden");
 }
 
-// Se clicar em "Não", brincadeira divertida
 naoBtn.addEventListener("click", () => {
   alert("Resposta errada , tente de novo!");
 });
 
 simBtn.addEventListener("click", mostrarResultado);
+
