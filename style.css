@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -85,13 +85,11 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Animação fade */
 @keyframes fadeIn {
     from {opacity: 0; transform: translateY(20px);}
     to {opacity: 1; transform: translateY(0);}
 }
 
-/* Formas geométricas flutuantes */
 .formas {
     position: absolute;
     top: 0;
@@ -135,3 +133,4 @@ button:hover {
     50% {transform: translateY(-50px) rotate(45deg);}
     100% {transform: translateY(0) rotate(45deg);}
 }
+
