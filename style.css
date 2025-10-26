@@ -1,4 +1,4 @@
-
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -85,11 +85,13 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* Animação fade */
 @keyframes fadeIn {
     from {opacity: 0; transform: translateY(20px);}
     to {opacity: 1; transform: translateY(0);}
 }
 
+/* Formas geométricas flutuantes */
 .formas {
     position: absolute;
     top: 0;
@@ -134,3 +136,19 @@ button:hover {
     100% {transform: translateY(0) rotate(45deg);}
 }
 
+.rastro {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(34, 34, 34, 0.1);
+    border: 2px solid rgba(34,34,34,0.2);
+    border-radius: 50%;
+    transform: rotate(45deg);
+    pointer-events: none;
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    from {opacity: 1; transform: scale(1);}
+    to {opacity: 0; transform: scale(0.5);}
+}
